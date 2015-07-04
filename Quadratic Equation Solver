@@ -6,6 +6,9 @@ c = float(raw_input('Enter C: '))
 ax = (b*-1)/(2*a)
 print 'Axis of symmetry is: '
 print ax
+apex = (a*ax*ax) + (b*ax) + c
+print 'Apex is: '
+print apex
 disc = (b*b)-(4*a*c)
 if disc < 0:
     print 'No real solutions'
