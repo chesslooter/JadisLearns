@@ -4,11 +4,9 @@ a = float(raw_input('Enter A: '))
 b = float(raw_input('Enter B: '))
 c = float(raw_input('Enter C: '))
 ax = (b*-1)/(2*a)
-print 'Axis of symmetry is: '
-print ax
+print 'Axis of symmetry is: ' + str(ax)
 apex = (a*ax*ax) + (b*ax) + c
-print 'Apex is: '
-print apex
+print 'Apex is: ' + str(apex)
 disc = (b*b)-(4*a*c)
 if disc < 0:
     print 'No real solutions'
@@ -17,10 +15,7 @@ else:
     pos = ax + discnew
     neg = ax - discnew
     if disc > 0:
-        print '2 real solutions'
-        print pos
-        print 'and'
-        print neg
+        print '2 real solutions: ' + str(pos) + ', and ' +str(neg)
     else:
-        print '1 real solution'
-        print pos
+        print '1 real solution: ' + str(pos)
+
